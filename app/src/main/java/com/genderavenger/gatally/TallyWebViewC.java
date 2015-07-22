@@ -9,7 +9,7 @@ public abstract class TallyWebViewC extends WebViewClient
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url)
     {
-        if (Uri.parse(url).getHost().equals("genderavenger.com")) //replace this with the url for your website
+        if (Uri.parse(url).getHost().equals("app.genderavenger.com")) //replace this with the url for your website
             return false;
 
         launchExternalBrowser(url);

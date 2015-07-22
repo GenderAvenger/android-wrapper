@@ -67,7 +67,7 @@ public class TallyIndex extends Activity {
                     @Override
                     public void onClick(View v) {
                         setContentView(R.layout.activity_tally_index);
-                        tallyWebView.loadUrl("http://app.genderaveger.com");
+                        tallyWebView.loadUrl("http://app.genderavenger.com");
                     }
                 });
                 super.onReceivedError(view, errorCode, description, failingUrl);
@@ -76,7 +76,7 @@ public class TallyIndex extends Activity {
         tallyWebView.setWebViewClient(client);
         tallyWebView.getSettings().setJavaScriptEnabled(true);
         tallyWebView.getSettings().setUserAgentString("GenderAvenger.com/0.1 (http://app.genderavenger.com/)");
-        tallyWebView.loadUrl("http://app.genderaveger.com");
+        tallyWebView.loadUrl("http://app.genderavenger.com");
     }
 
 
