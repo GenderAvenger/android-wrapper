@@ -11,9 +11,9 @@ public abstract class TallyWebViewC extends WebViewClient
     {
         if (Uri.parse(url).getHost().equals("app.genderavenger.com")) //replace this with the url for your website
             return false;
-
-        launchExternalBrowser(url);
-        return true;
+        return false;
+        //launchExternalBrowser(url);
+        //return true;
     }
 
     public abstract void launchExternalBrowser(String url);

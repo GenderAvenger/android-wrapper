@@ -5,3 +5,5 @@
 .DS_Store
 /build
 /captures
+genderavenger-keystore.jks
+app/app-release.apk
