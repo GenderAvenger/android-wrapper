@@ -1,5 +1,6 @@
 package com.genderavenger.gatally;
 
+import android.net.MailTo;
 import android.os.Build;
 import android.os.Bundle;
 import android.annotation.SuppressLint;
@@ -129,6 +130,12 @@ public class TallyIndex extends Activity {
             @Override
             public void launchExternalBrowser(String url) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+
+            public void sendEmail(String url) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO);
+                intent.setData(Uri.parse(url));
                 startActivity(intent);
             }
 

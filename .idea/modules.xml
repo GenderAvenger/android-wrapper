@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Dropbox/Code/Java/GATally/GATally.iml" filepath="$USER_HOME$/Dropbox/Code/Java/GATally/GATally.iml" />
-      <module fileurl="file://$USER_HOME$/Dropbox/Code/Java/GATally/app/app.iml" filepath="$USER_HOME$/Dropbox/Code/Java/GATally/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gatally-android-wrapper.iml" filepath="$PROJECT_DIR$/gatally-android-wrapper.iml" />
     </modules>
   </component>
 </project>
