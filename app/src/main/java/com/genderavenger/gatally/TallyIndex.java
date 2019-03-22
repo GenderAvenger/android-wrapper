@@ -12,6 +12,7 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import android.webkit.DownloadListener;
 import android.webkit.ValueCallback;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
@@ -165,6 +166,16 @@ public class TallyIndex extends Activity {
                 super.onReceivedError(view, errorCode, description, failingUrl);
             }
         };
+
+        tallyWebView.setDownloadListener(new DownloadListener() {
+            public void onDownloadStart(String url, String userAgent,
+                                        String contentDisposition, String mimetype,
+                                        long contentLength) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
         tallyWebView.setWebViewClient(client);
         tallyWebView.setWebChromeClient(new ChromeClient());
         tallyWebView.getSettings().setJavaScriptEnabled(true);
